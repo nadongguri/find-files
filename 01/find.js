@@ -12,9 +12,10 @@ async function getFilesInDir(dir) {
   }
 }
 
-async function main()
+async function main(dir)
 {
-  getFilesInDir(process.cwd());
+  getFilesInDir(dir);
 }
 
-main();
+
+main(path.resolve('test_folder'));
